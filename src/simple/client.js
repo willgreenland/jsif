@@ -80,7 +80,9 @@ jsifClient.createClientInDiv = function(id, game) {
 	document.onkeydown = function(e) {
 	    client.handleKeyEvent(e);
 	};
-    }
+
+	client.refresh();
+    };
         
     return client;
 
